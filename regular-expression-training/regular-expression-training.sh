@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ "Hello" = "Hello" ]] ; then
-  echo "ShellScript!"
+if [[ "012hello345" =~ [a-z]+ ]] ; then
+  echo ${BASH_REMATCH[0]}
 fi
 
