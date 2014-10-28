@@ -1,4 +1,6 @@
 #!/bin/bash
 
-echo Hello shellscript!
+if [[ "Hello" = "Hello" ]] ; then
+  echo "ShellScript!"
+fi
 
