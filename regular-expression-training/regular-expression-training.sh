@@ -1,6 +1,10 @@
 #!/bin/bash
 
-if [[ "012hello345" =~ [a-z]+ ]] ; then
+SOURCE="012hello345"
+TARGET="hello"
+echo ${SOURCE} から ${TARGET} を抽出する正規表現は？：
+read answer
+if [[ "${SOURCE}" =~ ${answer} ]] ; then
   echo ${BASH_REMATCH[0]}
 fi
 
