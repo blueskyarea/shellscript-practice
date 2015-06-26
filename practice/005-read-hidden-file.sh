@@ -13,8 +13,10 @@ secondConf=/usr/local/share/sample
 
 if [ $arg -eq 1 ]; then
   touch $firstConf 
+  echo 'WORK_DIR="~/work"' >$firstConf
 elif [ $arg -eq 2 ]; then
   sudo touch $secondConf
+  echo 'WORK_DIR="~/work2"' >$secondConf
 fi
 
 # read configuration file
