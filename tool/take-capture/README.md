@@ -1,3 +1,7 @@
+### What
+This script is for specifying target of window to take capture.  
+Actual capture function is presented by byzanz.
+
 ### Install
 Required byzanz.
 
