@@ -1,0 +1,36 @@
+#!/bin/bash
+
+print_bar(){
+  percent=$1
+  column=$(expr 100 \* "${percent}" / 100)
+  nspace=$(expr 100 - "${column}")
+
+  bar='\r['
+  cnt=0
+  while [ ${cnt} -le "${column}" ];
+  do
+    bar=${bar}'='
+    cnt=$((++cnt))
+  done
+  bar=${bar}'>'
+
+  cnt=0
+  while [ ${cnt} -le "${nspace}" ];
+  do
+    bar=${bar}' '
+    cnt=$((++cnt))
+  done
+  bar=${bar}'] '$percent'%\c'
+
+  echo -e "${bar}"
+}
+
+i=0
+while [ "$i" -le 100 ];
+do
+  print_bar "$i"
+  i=$(expr "$i" + 1)
+  sleep 1
+done
+echo
+
