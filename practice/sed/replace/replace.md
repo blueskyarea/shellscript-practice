@@ -64,3 +64,48 @@ Expected result)
 ABC ABC ABC ABC ABC
 ABC ABC ABC ABC ABC
 ```
+
+# 6. Replace 'aaa bbb ccc' to 'xxx'
+
+```
+sed -e ? replace6.txt
+```
+
+Expected result)
+
+```
+xxx
+xxx
+xxx
+xxx xxx xxx
+```
+
+# 7. Replace x to y if the line starts with '!'
+
+```
+sed -e ? replace7.txt
+```
+
+Expected result)
+
+```
+xxx
+!yyy
+!zzz
+xxx
+```
+
+# 8. Replace x to y if the line does not start with '!'
+
+```
+sed -e ? replace8.txt
+```
+
+Expected result)
+
+```
+yyy
+!xxx
+!zzz
+yyy
+```
