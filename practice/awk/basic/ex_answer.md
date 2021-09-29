@@ -19,6 +19,8 @@ awk '{print $2}' awk_basic3.txt
 4
 
 ```
+awk 'NR%2==0{print $0}' awk_basic4.txt
+or
 awk 'NR%2==0' awk_basic4.txt
 ```
 
@@ -32,4 +34,6 @@ awk 'BEGIN {sum=0} {sum+=$3} END {print "sum="sum, "ave="sum/NR}' awk_basic5.txt
 
 ```
 awk 'NR==1{print "Foo"} NR>1{print $0}' awk_basic6.txt
+or
+awk 'NR==1{print "Foo"} NR>1' awk_basic6.txt
 ```
