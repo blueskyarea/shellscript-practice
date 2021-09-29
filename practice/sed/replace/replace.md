@@ -109,3 +109,69 @@ yyy
 !zzz
 yyy
 ```
+
+# 9. Add '!' after 'xxx'
+
+```
+sed -e ? replace9.txt
+```
+
+Expected output)
+
+```
+xxx!yyy
+yyyxxx!
+xxx!zzz
+zzzxxx!
+```
+
+# 10. Show only replaced(xxx to XXX) lines
+
+```
+sed -n ? replace10.txt
+```
+
+Expected output)
+
+```
+XXX
+XXX
+```
+
+# 11. Replace "xxx to XXX" and "yyy to YYY"
+
+```
+sed -e ? replace11.txt
+```
+
+Expected output)
+
+```
+XXX
+YYY
+zzz
+XXX
+YYY
+zzz
+```
+
+# 12. Replace "AAA to BBB" from line 3 to 8
+
+```
+sed -e ? replace12.txt
+```
+
+Expected output)
+
+```
+AAA
+AAA
+BBB
+BBB
+BBB
+BBB
+BBB
+BBB
+AAA
+AAA
+```
