@@ -175,3 +175,39 @@ BBB
 AAA
 AAA
 ```
+
+# 13. Replace "AAA to BBB" between #FROM to #TO
+
+```
+sed -e ? replace13.txt
+```
+
+Expected result
+
+```
+AAA
+#FROM BBB
+BBB
+BBB
+BBB
+BBB #TO
+AAA
+```
+
+# 14. Replace "AAA to BBB", only next line of #TARGET
+
+```
+sed -e ? replace14.txt
+```
+
+Expected output
+
+```
+AAA
+#TARGET
+BBB
+AAA
+#TARGET
+BBB
+AAA
+```

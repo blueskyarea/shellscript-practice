@@ -69,3 +69,15 @@ sed -e 's/xxx/XXX/g' -e 's/yyy/YYY/g' replace11.txt
 ```
 sed -e '3,8 s/AAA/BBB/g' replace12.txt
 ```
+
+13
+
+```
+sed -e '/#FROM/,/#TO/ s/AAA/BBB/g' replace13.txt
+```
+
+14
+
+```
+sed -e '/#TARGET/{N; s/AAA/BBB/g}' replace14.txt
+```
