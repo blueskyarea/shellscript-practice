@@ -14,3 +14,9 @@ The usage is over threshold(50), killing the process.
 Currently, total CPU usage is 0% for awk
 Currently, total CPU usage is 0% for awk
 ```
+
+Command for testing
+
+```
+$ awk 'BEGIN{for(i=0;i<2000000;i++)print i}'
+```
