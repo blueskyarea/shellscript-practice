@@ -1,0 +1,10 @@
+1.	ACM/IEEE International Conference on Software Engineering
+2.	Journal of Systems and Software
+3.	IEEE Transactions on Software Engineering
+4.	Information and Software Technology
+5.	ACM SIGSOFT Iinternational Symposium on Foundations of Software Engineering
+6.	empirical software engineering
+7.	IEEE Software
+8.	ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)
+9.	Mining Software Repositories
+10.	IEEE/ACM International Conference on Automated Software Engineering (ASE)
